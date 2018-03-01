@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="costa.jhoni.loteria.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Simulador de Loterias"
+            android:textAlignment="center"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Selecione a quantidade de numeros:"
+            android:textAlignment="center" />
+
+        <RadioGroup
+            android:id="@+id/grupo_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <RadioButton
+                android:id="@+id/radio6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="6" />
+
+            <RadioButton
+                android:id="@+id/radio7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="7" />
+
+            <RadioButton
+                android:id="@+id/radio8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="8" />
+
+            <RadioButton
+                android:id="@+id/radio9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="9" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/botao_gerar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Gerar"
+            android:textColor="#fafafa" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Resultado:"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:id="@+id/resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/num1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/borda"
+                android:textAlignment="center"
+                android:layout_marginRight="5dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/num2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:background="@drawable/borda"/>
+            <TextView
+                android:id="@+id/num3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:background="@drawable/borda"/>
+            <TextView
+                android:id="@+id/num4"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:background="@drawable/borda"/>
+            <TextView
+                android:id="@+id/num5"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:background="@drawable/borda"/>
+            <TextView
+                android:id="@+id/num6"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:background="@drawable/borda"/>
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/resultado2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/num7"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:visibility="invisible"
+            android:background="@drawable/borda"/>
+        <TextView
+            android:id="@+id/num8"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:visibility="invisible"
+            android:background="@drawable/borda"/>
+        <TextView
+            android:id="@+id/num9"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:visibility="invisible"
+            android:layout_marginRight="5dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:background="@drawable/borda"/>
+    </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
